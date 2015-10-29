@@ -1,0 +1,10 @@
+prefix=/var/chengjun/wifidirect/RTL8192CU/wpa_supplicant_hostapd/libnl-1.1.2/_install
+exec_prefix=/var/chengjun/wifidirect/RTL8192CU/wpa_supplicant_hostapd/libnl-1.1.2/_install
+libdir=${exec_prefix}/lib
+includedir=/var/chengjun/wifidirect/RTL8192CU/wpa_supplicant_hostapd/libnl-1.1.2/_install/include
+
+Name: libnl
+Description: Convenience library for netlink sockets
+Version: 1.1.2
+Libs: -L${libdir} -lnl
+Cflags:

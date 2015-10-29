@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples
+END
+wep.conf
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/wep.conf
+END
+wpa2-eap-ccmp.conf
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/wpa2-eap-ccmp.conf
+END
+wpas-dbus-new-signals.py
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/wpas-dbus-new-signals.py
+END
+wpas-dbus-new.py
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/wpas-dbus-new.py
+END
+p2p-action.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/p2p-action.sh
+END
+p2p-action-udhcp.sh
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/p2p-action-udhcp.sh
+END
+wpas-dbus-new-getall.py
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/wpas-dbus-new-getall.py
+END
+udhcpd-p2p.conf
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/udhcpd-p2p.conf
+END
+wpas-dbus-new-wps.py
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/wpas-dbus-new-wps.py
+END
+plaintext.conf
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/plaintext.conf
+END
+60_wpa_supplicant
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/60_wpa_supplicant
+END
+ieee8021x.conf
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/ieee8021x.conf
+END
+openCryptoki.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/openCryptoki.conf
+END
+wpa-psk-tkip.conf
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/wpa-psk-tkip.conf
+END
+wpas-test.py
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/examples/wpas-test.py
+END

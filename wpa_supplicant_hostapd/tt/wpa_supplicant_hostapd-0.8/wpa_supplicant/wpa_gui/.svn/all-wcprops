@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui
+END
+eventhistory.ui
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/eventhistory.ui
+END
+networkconfig.ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/networkconfig.ui.h
+END
+scanresults.ui
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/scanresults.ui
+END
+userdatarequest.ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/userdatarequest.ui.h
+END
+wpamsg.h
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/wpamsg.h
+END
+setup-mingw-cross-compiling
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/setup-mingw-cross-compiling
+END
+wpa_gui.pro
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/wpa_gui.pro
+END
+networkconfig.ui
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/networkconfig.ui
+END
+userdatarequest.ui
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/userdatarequest.ui
+END
+wpagui.ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/wpagui.ui.h
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/.gitignore
+END
+eventhistory.ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/eventhistory.ui.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/main.cpp
+END
+scanresults.ui.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/scanresults.ui.h
+END
+wpagui.ui
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui/wpagui.ui
+END

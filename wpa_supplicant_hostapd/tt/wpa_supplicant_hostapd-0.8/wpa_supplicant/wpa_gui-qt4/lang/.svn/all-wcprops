@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/lang
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/lang/.gitignore
+END
+wpa_gui_de.ts
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/lang/wpa_gui_de.ts
+END

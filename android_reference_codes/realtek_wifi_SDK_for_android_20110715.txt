@@ -1,0 +1,190 @@
+==========================================================
+Realtek Wifi SDK for Android
+==========================================================
+	To port Realtek Wi-Fi driver onto Android platform, you
+can go through the following guide with reference codes 
+within our driver package's realtek_wifi_SDK_for_android_20110715.tar.gz.
+
+	Because Android's SDK may differ from platform to
+platform, our reference codes may not be applied on every
+platform without modifications. You should check if our
+reference code is suitable for you to use.
+
+==========================================================
+1. Modifications for platform related files
+==========================================================
+	a. BOARD_USES_REALTEK_WIFI
+		Ensure "BOARD_USES_REALTEK_WIFI = true" is defined
+		in BoardConfig.mk or Android.mk. This is for some
+		compile-time choices to be applied for our wifi.
+		
+	b. Service definitions
+		Make sure the service definition of wpa_supplicant,
+		dhcpd, hostapd is defined in init.rc or init.xxx.rc
+		for your platform. As following:
+
+service wpa_supplicant /system/bin/wpa_supplicant -Dwext -iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
+	disabled
+	oneshot
+
+service hostapd /system/bin/hostapd_wps /data/misc/wifi/hostapd.conf
+	disabled
+	oneshot
+
+service dhcpcd /system/bin/dhcpcd -ABKL
+	disabled
+	oneshot
+	
+==========================================================
+2. Modifications for dhcpcd
+==========================================================
+	external/dhcpcd/Android.mk
+	external/dhcpcd/client_realtek.c
+	external/dhcpcd/logger_realtek.c
+	
+==========================================================
+3. Modifications for wpa_supplicant
+==========================================================
+	external/wpa_supplicant/Android.mk
+	external/wpa_supplicant/driver_wext.c
+	external/wpa_supplicant/vendor.h
+	
+	Following is the reference content of wpa_supplicant.conf:
+	
+update_config=1
+ctrl_interface=DIR=/data/misc/wifi/wpa_supplicant GROUP=wifi	
+ap_scan=1
+
+==========================================================
+4. Modifications for libhardware_legacy - wifi
+==========================================================
+	hardware/libhardware_legacy/wifi/Android.mk
+	hardware/libhardware_legacy/wifi/wifi_realtek.c
+	
+==========================================================
+5. Modifications for netd - hostapd
+==========================================================
+	external/hostapd-0.6.9_rtl/*
+	system/netd/Android.mk
+	system/netd/SoftapController_realtek.cpp
+
+==========================================================
+6. Modification for opening portable hotspot UI
+==========================================================
+	Add interface items for "config_tether_wifi_regexs" and
+	"config_tether_upstream_regexs"
+	
+	frameworks/base/core/res/res/values/config.xml
+
+==========================================================
+7. Driver compilation 
+==========================================================
+	a. For compilation, see document/HowTo support new platform(including Android).doc or
+		document/HowTo build driver under kernel tree.doc for reference.
+		
+	b. MODULE_NAME defined in Makefile
+		For android to rmmod the wifi kernel module, the
+		driver module name, which is decided in compilation
+		time as MODULE_NAME defined in Makefile, should be
+		the same as WIFI_DRIVER_MODULE_NAME defined in
+		wifi_realtek.c:
+		
+		#define WIFI_DRIVER_MODULE_NAME	 "wlan"
+	
+	c. If you compile wifi driver to .ko file, place driver module to specific path.
+		The default path is defined in wifi_realtek.c:
+		
+		#define WIFI_DRIVER_MODULE_PATH	"/system/wifi/wlan.ko"
+
+	d. Other useful driver options defined in include/autoconf.h
+	
+	#define CONFIG_IPS_LEVEL_2
+		The default IPS mode, IPS_NORMAL, needs a lot of IOs to
+		wake up, it will spend much time espeically with low
+		speed IO interface, ex: USB1.1. With this Macro defined,
+		driver will set the default IPS mode to IPS_LEVEL_2.
+		IPS_LEVEL_2 spends more power than IPS_NORMAL but it is
+		speedy while waken up.
+		IPS_LEVEL_2 is suitable for users who care the transition
+		speed more than power consumption especially when using
+		wifi on low speed IO interface such as USB1.1. In case of
+		the system with USB1.1 interface and DPM device timeout
+		checking (default is 3 secs), using IPS_NORMAL may make
+		driver’s suspend function take more than 3 sec to be done,
+		so may have chance to trigger the “kernel BUG” resulting
+		to kernel call trace and system reboot.
+	
+		當省電模式打開時，driver預設的IPS(連線前的省電模式)模式在
+		喚醒時需要較多的IO，在IO速度較慢的介面下會較耗時。此機制
+		會將IPS模式預設為IPS_LEVEL_2。IPS_LEVEL_2相較於IPS_NORMAL
+		在省電程度打折扣，但優點是喚醒速度快。
+		當wifi用在usb1.1介面，且kernel會檢查DPM device timout(預
+		設3秒)時，因為IPS_NORMAL有可能會造成wifi suspend耗時超過3
+		秒而導至DPM device timeout，kernel call dump且重開機。
+
+	#define CONFIG_ADAPTOR_INFO_CACHING_FILE
+		When the driver recognizes the wifi HW, it will read HW
+		configuration from it. This will spend much time espeically
+		with low speed IO interface. With this Macro defined, the
+		HW configuration will be cached in file (default path is
+		/data/misc/wifi/rtw_cache) to save the time of reading HW
+		configuration through IO. This machanism is suitable for
+		situations placing wifi module inside platform case. If wifi
+		module/dongle is replacable, due to the configuration
+		difference of each Wifi HW, using wrong HW configuration
+		will cause wifi to work unnormally.
+	
+		wifi driver在認到網卡時，會從網卡讀取硬體設置資訊。此步驟在
+		IO速度較慢的介面下會較耗時。此機制可以將網卡的硬體設置資訊
+		存到檔案中(預設路徑/data/misc/wifi/rtw_cache)，節省時間。
+		需注意，此機制適合內置wifi的使用情境。平台若採用外置可抽換的
+		wifi dongle，由於每個網卡的硬體設置資訊不同，使用錯的硬體設
+		置會造成wifi不能正常工作。
+
+	#define CONFIG_RESUME_IN_WORKQUEUE
+		The Android system will resume normal peripherals(ex: Wifi)
+		first and then peripherals registerd under early suspend
+		(ex: screen). The Wif resume process will spend much time
+		espeically with low speed IO interface. This will cause the
+		user experience a period of "black screen time" after
+		pushing down the resume button. Before our driver supports
+		early suspend, CONFIG_RESUME_IN_WORKQUEUE is used as an solution
+		to deal with this situation. With CONFIG_RESUME_IN_WORKQUEUE
+		defined, the wifi resume process will be done in workqueue to
+		avoid delaying of screen light-up.
+		Our driver now support early_suspend. If the android suppport
+		"early suspend" (kernel with CONFIG_HAS_EARLYSUSPEND defined),
+		CONFIG_RESUME_IN_WORKQUEUE will be disabled automatically and
+		cause some warning message when compiling driver.
+		
+		系統resume時會先resume一般的周邊裝置。然後再resume註冊在early
+		suspend的裝置。因為wifi在resume時需要花費一些時間，而android
+		亮屏的部份是註冊在early suspend下，所以會有按下resume鍵後，不
+		會馬上亮屏的情況。在我們的driver支援early suspend之前，此機制
+		可以將wifi resume放入workqueue，避免wifi resume延遲到亮屏的時間。
+		目前的driver已支援early suspend。如果android支援early suspend
+		(kernel會有CONFIG_HASEARLYSUSPEND的定義)，CONFIG_RESUME_IN_
+		WORKQUEUE會自動關閉，此時編譯driver的過程會有warning訊息。
+
+	#define CONFIG_SET_SCAN_DENY_TIMER
+		With this Macro defined, driver will bypass the scan command
+		from upper layer for a short period of time (3 sec by default)
+		when the connection to AP is done and DHCP process. This will
+		reduce the disturbance caused by scan command from upper layer
+		while WPA/WPA2 authentication and DHCP are in progress.
+		
+		此機制打開後，在與AP連上線或DHCP時，會暫時將上層的scan命令直
+		接返回scan完成，而不進行真正的scan。可以減少上層scan對連線及
+		DHCP的干擾。
+		
+	#define CONFIG_LED
+		While some wifi module do not have led in its design, we can
+		close LED control to save some IO operations with this MACRO
+		commented.
+		
+		有些wifi module的設計並沒有LED，此時可以關掉這個MACRO來節省掉
+		一些無謂的IO動作。
+	
+	
+	
+		

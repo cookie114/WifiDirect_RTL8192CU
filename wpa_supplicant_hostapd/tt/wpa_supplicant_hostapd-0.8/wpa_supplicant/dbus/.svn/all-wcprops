@@ -1,0 +1,143 @@
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus
+END
+dbus_old.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_old.h
+END
+dbus_old_handlers_wps.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_old_handlers_wps.c
+END
+dbus_common.c
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_common.c
+END
+dbus_new.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_new.c
+END
+dbus_common.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_common.h
+END
+fi.w1.wpa_supplicant1.service
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/fi.w1.wpa_supplicant1.service
+END
+dbus_old_handlers.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_old_handlers.c
+END
+dbus_new.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_new.h
+END
+fi.epitest.hostap.WPASupplicant.service
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/fi.epitest.hostap.WPASupplicant.service
+END
+dbus_new_handlers_wps.c
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_new_handlers_wps.c
+END
+dbus_old_handlers.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_old_handlers.h
+END
+dbus_new_introspect.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_new_introspect.c
+END
+dbus_common_i.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_common_i.h
+END
+dbus_dict_helpers.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_dict_helpers.c
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/.gitignore
+END
+dbus_new_handlers.c
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_new_handlers.c
+END
+dbus_dict_helpers.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_dict_helpers.h
+END
+dbus-wpa_supplicant.conf
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus-wpa_supplicant.conf
+END
+dbus_new_helpers.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_new_helpers.c
+END
+dbus_new_handlers.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_new_handlers.h
+END
+dbus_old.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_old.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/Makefile
+END
+dbus_new_helpers.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/dbus/dbus_new_helpers.h
+END

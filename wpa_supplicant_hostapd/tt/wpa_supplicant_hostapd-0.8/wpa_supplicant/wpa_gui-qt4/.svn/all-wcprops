@@ -1,0 +1,179 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4
+END
+eventhistory.ui
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/eventhistory.ui
+END
+wpagui.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/wpagui.h
+END
+stringquery.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/stringquery.h
+END
+scanresults.ui
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/scanresults.ui
+END
+wpamsg.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/wpamsg.h
+END
+eventhistory.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/eventhistory.cpp
+END
+scanresults.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/scanresults.cpp
+END
+eventhistory.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/eventhistory.h
+END
+wpa_gui.pro
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/wpa_gui.pro
+END
+addinterface.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/addinterface.cpp
+END
+peers.ui
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/peers.ui
+END
+networkconfig.ui
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/networkconfig.ui
+END
+scanresults.h
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/scanresults.h
+END
+userdatarequest.ui
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/userdatarequest.ui
+END
+peers.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/peers.cpp
+END
+icons.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/icons.qrc
+END
+addinterface.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/addinterface.h
+END
+networkconfig.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/networkconfig.cpp
+END
+userdatarequest.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/userdatarequest.cpp
+END
+icons_png.qrc
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/icons_png.qrc
+END
+wpa_gui.desktop
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/wpa_gui.desktop
+END
+peers.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/peers.h
+END
+networkconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/networkconfig.h
+END
+main.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/main.cpp
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/.gitignore
+END
+userdatarequest.h
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/userdatarequest.h
+END
+wpagui.ui
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/wpagui.ui
+END
+stringquery.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/stringquery.cpp
+END
+wpagui.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/sd4_drivers/!svn/ver/1629/trunk/wpa_supplicant_hostapd-0.8/wpa_supplicant/wpa_gui-qt4/wpagui.cpp
+END
